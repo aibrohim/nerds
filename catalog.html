@@ -38,7 +38,7 @@
   <main>
     <div class="container sort-container">
       <aside class="filtr">
-        <form action="POST" action="https://echo.htmlacademy.ru">
+        <form method="POST" action="https://echo.htmlacademy.ru">
           <fieldset class="filtr-part filtr-price">
             <legend class="filtr-part-title">СТОИМОСТЬ:</legend>
             <div class="range-control">
@@ -56,17 +56,17 @@
           <fieldset class="filtr-part filtr-grid">
             <legend class="filtr-part-title">Сетка:</legend>
             <label>
-              <input type="radio" name="grid" id="grid-radio" class="visually-hidden grid-radio" checked>
+              <input type="radio" name="grid" class="visually-hidden grid-radio" checked>
               <span class="styled-radio"></span>
               Адаптивная
             </label>
             <label>
-              <input type="radio" name="grid" id="grid-radio" class="visually-hidden grid-radio" >
+              <input type="radio" name="grid" class="visually-hidden grid-radio" >
               <span class="styled-radio"></span>
               Фиксированная
             </label>
             <label>
-              <input type="radio" name="grid" id="grid-radio" class="visually-hidden grid-radio">
+              <input type="radio" name="grid" class="visually-hidden grid-radio">
               <span class="styled-radio"></span>
               Резиновая
             </label>
@@ -75,23 +75,23 @@
           <fieldset class="filtr-part filtr-aspects">
             <legend class="filtr-part-title">ОСОБЕННОСТИ:</legend>
             <label>
-              <input type="checkbox" name="filtr-aspects" id="aspect-checkbox" class="visually-hidden aspect-checkbox" checked>
+              <input type="checkbox" name="filtr-aspects" class="visually-hidden aspect-checkbox" checked>
               <span class="styled-checkbox"></span>Слайдер
             </label>
             <label>
-              <input type="checkbox" name="filtr-aspects" id="aspect-checkbox" class="visually-hidden aspect-checkbox">
+              <input type="checkbox" name="filtr-aspects" class="visually-hidden aspect-checkbox">
               <span class="styled-checkbox"></span>Блок преимуществ
             </label>
             <label>
-              <input type="checkbox" name="filtr-aspects" id="aspect-checkbox"  class="visually-hidden aspect-checkbox" checked>
+              <input type="checkbox" name="filtr-aspects"  class="visually-hidden aspect-checkbox" checked>
               <span class="styled-checkbox"></span>Новости
             </label>
             <label>
-              <input type="checkbox" name="filtr-aspects" id="aspect-checkbox" class="visually-hidden aspect-checkbox">
+              <input type="checkbox" name="filtr-aspects" class="visually-hidden aspect-checkbox">
               <span class="styled-checkbox"></span>Галерея
             </label>
             <label>
-              <input type="checkbox" name="filtr-aspects" id="aspect-checkbox" class="visually-hidden aspect-checkbox">
+              <input type="checkbox" name="filtr-aspects" class="visually-hidden aspect-checkbox">
               <span class="styled-checkbox"></span>Корзина
             </label>
           </fieldset>
@@ -210,7 +210,7 @@
     <section class="contacts">
       <h2 class="visually-hidden">Контакты</h2>
       
-      <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A5f7128949fec59b341bf43e2e3848b684bb2fca92ff97aa669b352f8fab3fa80&amp;source=constructor" width="100%" height="416" frameborder="0"></iframe>
+      <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A5f7128949fec59b341bf43e2e3848b684bb2fca92ff97aa669b352f8fab3fa80&amp;source=constructor" height="416"></iframe>
       <div class="contacts-card">
         <p class="contacts-title">NЁRDS DESIGN STUDIO</p>
         <p class="address">
