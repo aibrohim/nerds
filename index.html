@@ -35,6 +35,9 @@
   
   <main>
     <section class="intro">
+      <h2 class="visually-hidden">
+        Карусель
+      </h2>
       <div class="container">
         <input type="radio" name="slide" id="slide-1" class="visually-hidden" checked>
         <input type="radio" name="slide" id="slide-2" class="visually-hidden">
@@ -196,7 +199,7 @@
         
         <ul class="partners-list">
           <li class="partner-item">
-            <a href="#" class="partner-link"><img src="img/logo-1.png.png" alt="Партнёр HTML Academy" width="199" height="68"></a>
+            <a href="https://htmlacademy.ru/intensive/htmlcss" class="partner-link"><img src="img/logo-1.png.png" alt="Партнёр HTML Academy" width="199" height="68"></a>
           </li>
           <li class="partner-item">
             <a href="#" class="partner-link"><img src="img/logo-2.png.png" alt="Партнёр Barbershop Borodinski" width="209" height="90"></a>
@@ -222,7 +225,7 @@
           ул. Б. Конюшенная, д. 19/8
         </p>
         <a href="tel:+78122757575" class="phone">тел. +7 (812) 275-75-75</a>
-        <a href="form.html" class="button button-red contacts-button"><span>Напишите нам</span></a>
+        <a href="form.html" id="writeus-opener" class="button button-red contacts-button"><span>Напишите нам</span></a>
       </div>
     </section>
   </main>
@@ -241,7 +244,33 @@
     </div>
   </footer>
 
+  <section class="writeus">
+    <div class="writeus-container">
+      <h2 class="writeus-title">Напишите нам</h2>
+      <form method="POST" action="https://echo.htmlacademy.ru" class="writeus-form">
+        <label class="input-area">
+          Ваше имя:
+          <input type="text" id="name" class="writeus-input" placeholder="Имя Фамилия">
+        </label>
+        <label class="input-area">
+          Ваш e-mail:
+          <input type="email" id="email" class="writeus-input" placeholder="email@example.com">
+        </label>
+        <label class="letterarea">
+          Текст письма:
+          <textarea name="letter" id="letter" rows="5" class="writeus-input writeus-letter" placeholder="В свободной форме"></textarea>
+        </label>
+        <button type="submit" class="button button-red">ОТПРАВИТЬ</button>
+      </form>
+
+      <button class="close-button" type="button" aria-label="закрыть">
+
+      </button>
+    </div>
+  </section>
   
+
+  <script src="js/index.js"></script>
   
 </body>
 </html>
